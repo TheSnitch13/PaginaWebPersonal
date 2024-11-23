@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3efe0;
+    margin: 0;
+    padding: 0;
+    color: #434242;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #384B70;
+    margin-bottom: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f3efe0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.1em;
+    color: #434242;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #507687;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #22a39f;
+    color: #Fcfaee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #22a39f;
+}
+
+.link-btn {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    background-color: #22a39f;
+    color: #FCFAEE;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.link-btn:hover {
+    background-color: #507687;
+}
+
+/* Table Styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+    background-color: #FCFAEE;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table thead {
+    background-color: #22a39f;
+    color: #fcfaee;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #f3efe0;
+}
+
+.table tr:hover {
+    background-color: #f3efe0;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    padding: 20px;
+    background: #384B70;
+    color: #fcfaee;
+    border-bottom: 4px solid #22a39f;
+}
+
+.header img {
+    max-height: 50px;
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}

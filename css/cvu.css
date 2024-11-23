@@ -1,0 +1,36 @@
+:root{
+      --rojoo: #B8001F;
+      --verde: #22a39f;
+  }
+h2,h3,h4,h5,h6 {
+    font-family: "Courier new", sans-serif;
+  }
+  h1 {
+    color: var(--rojo) !important;
+    font-size: 3.5rem !important;
+    text-align: center !important;
+  }
+
+  span {
+    color: var(--verde) !important;
+    font-size: 1.5rem !important;
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+  
+  a:hover h1, a:hover h1 span {
+    color: var(--verde) !important;
+  }
+  p {
+    text-align: justify;
+  }
+
+  footer {
+    width: 120rem;
+    margin: 3rem auto;
+    text-align: right;
+    color: var(--rojo);
+    font-weight: 700;
+  }
